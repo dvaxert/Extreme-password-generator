@@ -30,10 +30,13 @@ To generate a password you need:
 seed is optional**. If you use seed, remember that the program will generate
 the same password if the same seed was used. If you don't use seed then
 the current time will be used as seed.
+
 2. Specify the number of characters in your new password. **Specify the
 number of characters is required!**
+
 3. Specify what types of characters the generator should use when creating
 your new password. **Specify character types is required!**
+
 
 **If you do not specify the necessary rules for generating a password, you will
 get password of appropriate quality - *qwerty***
