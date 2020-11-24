@@ -16,7 +16,7 @@ Unix, но в проекте не был использован платформ
 
 > mkdir build
 
-> cd build
+> cd Extreme-password-generator/build
 
 > cmake ..
     
