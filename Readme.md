@@ -16,7 +16,7 @@ execute the following commands in the terminal:
 
 > mkdir build
 
-> cd build
+> cd Extreme-password-generator/build
 
 > cmake ..
 
