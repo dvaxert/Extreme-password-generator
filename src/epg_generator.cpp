@@ -9,10 +9,10 @@ namespace epg {
 constexpr auto BAD_PASSWORD = "qwerty";
 
     EPG_GeneratorData::EPG_GeneratorData(
-            const char* s,
-            const int c,
-            bitset<BITSET_SIZE> f,
-            shared_ptr<Fl_Output> out
+        const char* s,
+        const int c,
+        bitset<BITSET_SIZE> f,
+        shared_ptr<Fl_Output> out
     )
         :seed(s)
         ,symbolCount(c)
