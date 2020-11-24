@@ -9,16 +9,24 @@
 namespace epg {
 
     EPG_Window::EPG_Window()
-        :window(new Fl_Window(WINDOW_W, WINDOW_H, PROGRAM_NAME))
-        ,seed(new Fl_Input(SEED_X, SEED_Y, SEED_W, SEED_H, SEED_NAME))
-        ,counter(new Fl_Value_Input(COUNTER_X, COUNTER_Y,
-                                    COUNTER_W, COUNTER_H, COUNTER_NAME))
-        ,button(new Fl_Button(BUTTON_X, BUTTON_Y,
-                              BUTTON_W, BUTTON_H, BUTTON_NAME))
-        ,splitter(new Fl_Button(SPLITTER_X, SPLITTER_Y,
-                                SPLITTER_W, SPLITTER_H))
-        ,output(new Fl_Output(OUTPUT_X, OUTPUT_Y,
-                              OUTPUT_W, OUTPUT_H, OUTPUT_NAME))
+        :window(new Fl_Window(
+            WINDOW_W, WINDOW_H, PROGRAM_NAME
+        ))
+        ,seed(new Fl_Input(
+            SEED_X, SEED_Y, SEED_W, SEED_H, SEED_NAME
+        ))
+        ,counter(new Fl_Value_Input(
+            COUNTER_X, COUNTER_Y, COUNTER_W, COUNTER_H, COUNTER_NAME
+        ))
+        ,button(new Fl_Button(
+            BUTTON_X, BUTTON_Y, BUTTON_W, BUTTON_H, BUTTON_NAME
+        ))
+        ,splitter(new Fl_Button(
+            SPLITTER_X, SPLITTER_Y, SPLITTER_W, SPLITTER_H
+        ))
+        ,output(new Fl_Output(
+            OUTPUT_X, OUTPUT_Y, OUTPUT_W, OUTPUT_H, OUTPUT_NAME
+        ))
     {
         for(size_t i = 0; i < BITSET_SIZE; ++i) {
             checkers[i] = unique_ptr<Fl_Check_Button>(new Fl_Check_Button(
