@@ -12,16 +12,11 @@ This program uses the FLTK library "https://www.fltk.org/".
 # How to compile:
 Go to the directory where you want to place a copy of the project directory and
 execute the following commands in the terminal:
-> git clone https://github.com/Exerros/Extreme-password-generator
-
-> mkdir build
-
-> cd Extreme-password-generator/build
-
-> cmake ..
-
-> cmake --build .
-
+> git clone https://github.com/Exerros/Extreme-password-generator  
+> mkdir build  
+> cd Extreme-password-generator/build  
+> cmake ..  
+> cmake --build .  
 > ./extreme_password_generator
 
 # How to use:
