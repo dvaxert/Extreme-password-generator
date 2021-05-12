@@ -17,10 +17,11 @@ This program uses the FLTK library "https://www.fltk.org/".
 Go to the directory where you want to place a copy of the project directory and
 execute the following commands in the terminal:  
 > git clone https://github.com/Exerros/Extreme-password-generator  
-> git submodule init
-> git submodule update
+> cd Extreme-password-generator  
+> git submodule init  
+> git submodule update  
 > mkdir build  
-> cd Extreme-password-generator/build  
+> cd build  
 > cmake ..  
 > cmake --build .  
 > ./epg  
