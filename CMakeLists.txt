@@ -1,11 +1,11 @@
 cmake_minimum_required(VERSION 2.8)
 
-project(extreme_password_generator)
+project(epg)
 
 set(PROJECT_VERSION_MAJOR 1)
 set(PROJECT_VERSION_MINOR 0)
 
-set(CMAKE_CXX_STANDART 14)
+set(CMAKE_CXX_STANDART 17)
 set(CMAKE_CXX_STANDART_REQUIRED TRUE)
 
 add_compile_options(
@@ -16,7 +16,7 @@ add_compile_options(
 #set the project variables
 set(INCLUDE_DIR "${PROJECT_SOURCE_DIR}/include")
 set(SRC_DIR "${PROJECT_SOURCE_DIR}/src")
-set(LIBS_DIR "${PROJECT_SOURCE_DIR}/ThirdParty")
+set(LIBS_DIR "${PROJECT_SOURCE_DIR}/third_party")
 set(BUILD_DIR "${CMAKE_CURRENT_BINARY_DIR}")
 
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY "${BUILD_DIR}/lib")
@@ -51,3 +51,7 @@ target_link_libraries(epg_core fltk)
 #configure program
 add_executable(${PROJECT_NAME} main.cpp)
 target_link_libraries(${PROJECT_NAME} epg_core)
+
+#configure program installing
+install(TARGETS ${PROJECT_NAME} DESTINATION "/usr/local/bin/")
+#install(FILES )
