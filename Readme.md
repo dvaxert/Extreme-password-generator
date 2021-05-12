@@ -7,7 +7,7 @@ Extreme password generator is a program for generating effective passwords of
 4. Special characters.  
 
 There is also a functionality for generating passwords from "seed" which always
-ы creates the same password from the same input value.  
+creates the same password from the same input value.  
 
 # Required
 To build a project you need CMake version 2.8 or older.  
