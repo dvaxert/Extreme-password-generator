@@ -16,7 +16,7 @@ add_compile_options(
 #set the project variables
 set(INCLUDE_DIR "${PROJECT_SOURCE_DIR}/include")
 set(SRC_DIR "${PROJECT_SOURCE_DIR}/src")
-set(LIBS_DIR "${PROJECT_SOURCE_DIR}/third_party")
+set(LIBS_DIR "${PROJECT_SOURCE_DIR}/ThirdParty")
 set(BUILD_DIR "${CMAKE_CURRENT_BINARY_DIR}")
 
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY "${BUILD_DIR}/lib")
@@ -54,4 +54,3 @@ target_link_libraries(${PROJECT_NAME} epg_core)
 
 #configure program installing
 install(TARGETS ${PROJECT_NAME} DESTINATION "/usr/local/bin/")
-#install(FILES )
