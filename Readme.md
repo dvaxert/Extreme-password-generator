@@ -27,12 +27,14 @@ execute the following commands in the terminal:
   
 You can install the application with the command:  
 > make install  
+
 this may require administrator privileges or the use of sudo. 
 You can also use the scripts in the **Extreme-password-generator/scripts**
  directory for the above actions  
 After installation you will be able to start the program from the application
  menu or with the command:  
 > epg  
+
 
 # How to use:
 To generate a password you need:
