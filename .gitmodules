@@ -1,6 +1,3 @@
 [submodule "ThirdParty/fltk"]
 	path = ThirdParty/fltk
 	url = https://github.com/fltk/fltk
-[submodule "ThirdParty/libX11"]
-	path = ThirdParty/libX11
-	url = https://github.com/mirror/libX11
