@@ -5,4 +5,5 @@
 #pragma once
 
 //This header need to input values from CMakeLists.txt
-#define PROGRAM_NAME "EPG 1.0"
+#define PROGRAM_NAME "EPG 1.1"
+#define SYSTEM_NAME Windows

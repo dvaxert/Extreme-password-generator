@@ -15,6 +15,7 @@
 #include "FL/Fl_Check_Button.H"
 #include "FL/Fl_Input.H"
 #include "FL/Fl_Value_Input.H"
+#include <FL/x.H>
 
 #include "epg_window_constants.hpp"
 #include "epg_generator.hpp"

@@ -3,6 +3,8 @@
  *  11.24.2020
 */
 #include "epg_window.hpp"
+#include "epg_config.hpp"
+#include "resource.hpp"
 
 #define prefix_unused(variable) ((void)variable)
 
@@ -28,6 +30,7 @@ namespace epg {
             OUTPUT_X, OUTPUT_Y, OUTPUT_W, OUTPUT_H, OUTPUT_NAME
         ))
     {
+        window->icon((const void *)LoadIcon(fl_display, MAKEINTRESOURCE(SMALL_ICON)));
         for(size_t i = 0; i < BITSET_SIZE; ++i) {
             checkers[i] = unique_ptr<Fl_Check_Button>(new Fl_Check_Button(
                 CHECKERS_X,

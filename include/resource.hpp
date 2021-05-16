@@ -1,0 +1,1 @@
+#define SMALL_ICON 100
