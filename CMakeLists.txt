@@ -18,7 +18,6 @@ set(INCLUDE_DIR "${PROJECT_SOURCE_DIR}/include")
 set(SRC_DIR "${PROJECT_SOURCE_DIR}/src")
 set(LIBS_DIR "${PROJECT_SOURCE_DIR}/ThirdParty")
 set(BUILD_DIR "${CMAKE_CURRENT_BINARY_DIR}")
-set(CURRENT_DIR "${CMAKE_CURRENT_SOURCE_DIR}")
 
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY "${BUILD_DIR}/lib")
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY "${BUILD_DIR}/lib")
@@ -51,7 +50,7 @@ target_link_libraries(epg_core fltk)
 
 #configure program
 if(WIN32)
-    set(APP_ICON_RESOURCE_WINDOWS "${CURRENT_DIR}/icon.rc")
+    set(APP_ICON_RESOURCE_WINDOWS "${CMAKE_CURRENT_SOURCE_DIR}/icons.rc")
 endif()
 add_executable(${PROJECT_NAME} main.cpp ${APP_ICON_RESOURCE_WINDOWS})
 target_link_libraries(${PROJECT_NAME} epg_core)

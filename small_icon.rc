@@ -1,3 +1,0 @@
-#include "include/resource.hpp"
-
-SMALL_ICON ICON DISCARDABLE "icons\\epg.ico"
