@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.1
+Type=Application
+Name=EPG
+Icon=/usr/share/icons/epg/epg.ico
+Exec=/usr/bin/epg
+Comment=Extreme Password Generator
+Categories=Office
+Terminal=false
+StartupWMClass=epg
+

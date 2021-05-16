@@ -9,17 +9,19 @@
 #include <array>
 
 #include "FL/Fl.H"
+#include <FL/Fl_Box.H>
 #include "FL/Fl_Window.H"
 #include "FL/Fl_Button.H"
 #include "FL/Fl_Output.H"
 #include "FL/Fl_Check_Button.H"
 #include "FL/Fl_Input.H"
 #include "FL/Fl_Value_Input.H"
-#include <FL/x.H>
+#include "FL/x.H"
 
 #include "epg_window_constants.hpp"
 #include "epg_generator.hpp"
 #include "epg_config.hpp"
+#include "resource.hpp"
 
 using std::unique_ptr;
 using std::shared_ptr;

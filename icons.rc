@@ -1,4 +1,4 @@
 #include "include/resource.hpp"
 
-id ICON "\\icons\\epg.ico"
-SMALL_ICON ICON DISCARDABLE "\\icons\epg.ico"
+id ICON "\\resources\\epg.ico"
+SMALL_ICON ICON DISCARDABLE "\\resources\epg.ico"

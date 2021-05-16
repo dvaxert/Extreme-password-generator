@@ -5,7 +5,7 @@
 
 #include "epg_window.hpp"
 
-#if SYSTEM_NAME == Windows
+#ifdef Windows
 #include <windows.h>
 
 void HideConsole()
@@ -16,7 +16,7 @@ void HideConsole()
 
 int main()
 {
-#if SYSTEM_NAME == Windows
+#ifdef Windows
     HideConsole();
 #endif
 //Here, the program window object is created. It sets all the necessary

@@ -6,4 +6,4 @@
 
 //This header need to input values from CMakeLists.txt
 #define PROGRAM_NAME "EPG @PROJECT_VERSION_MAJOR@.@PROJECT_VERSION_MINOR@"
-#define SYSTEM_NAME @CMAKE_SYSTEM_NAME@
+#define @CMAKE_SYSTEM_NAME@

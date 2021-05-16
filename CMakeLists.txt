@@ -11,6 +11,7 @@ set(CMAKE_CXX_STANDART_REQUIRED TRUE)
 add_compile_options(
     -Wall
     -g
+    -fPIC
 )
 
 #set the project variables
@@ -47,7 +48,6 @@ target_include_directories(epg_core
 )
 target_link_libraries(epg_core fltk)
 
-
 #configure program
 if(WIN32)
     set(APP_ICON_RESOURCE_WINDOWS "${CMAKE_CURRENT_SOURCE_DIR}/icons.rc")
@@ -57,7 +57,11 @@ target_link_libraries(${PROJECT_NAME} epg_core)
 
 #configure program installing
 if(UNIX)
-    install(TARGETS ${PROJECT_NAME} DESTINATION "/usr/local/bin/")
-    install(TARGETS epg_core DESTINATION "/usr/local/lib/")
+    install(TARGETS ${PROJECT_NAME} DESTINATION "/usr/bin/")
+    install(TARGETS epg_core DESTINATION "/usr/lib/")
+    file(GLOB_RECURSE EPG_INCLUDES "${INCLUDE_DIR}/*.hpp")
+    install(FILES ${EPG_INCLUDES} DESTINATION "/usr/include/")
+    install(FILES "${CMAKE_CURRENT_SOURCE_DIR}/resources/epg.ico" DESTINATION "/usr/share/icons/epg/")
+    install(FILES "${CMAKE_CURRENT_SOURCE_DIR}/resources/epg.desktop" DESTINATION "/usr/share/applications/")
 endif()
 
