@@ -2,7 +2,7 @@
 Extreme password generator is a program for generating effective passwords of
  any length using symbols from the following categories:  
 1. Lower case letters;  
-2. Uppercase letters;  
+2. Upper case letters;  
 3. Numbers;  
 4. Special characters.  
 
